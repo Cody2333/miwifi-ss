@@ -11,9 +11,6 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 cd /tmp
-rm -f shadowsocks_mini.tar.gz
-curl https://raw.githubusercontent.com/gaiqs/miwifi-ss/master/mini/shadowsocks_mini.tar.gz -o shadowsocks_mini.tar.gz
-tar zxf shadowsocks_mini.tar.gz
 
 # install shadowsocks ss-redir to /userdisk/sysapihttpd/shadowsocks/bin
 # all data in /userdisk/sysapihttpd directory would not reset by system configure reset
